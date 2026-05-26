@@ -1,0 +1,15 @@
+.venv/
+.tools/
+__pycache__
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+checkpoints/
+eval_cache/
+paper/
+sbatch_output/
+__pycache__/
+demo/screencast/
+demo/assets/afin_terminal.mp4
+demo/assets/nuts_terminal.mp4
+demo/assets/afin_vs_nuts_screencast.mp4

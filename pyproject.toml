@@ -1,0 +1,41 @@
+[project]
+name = "afin"
+version = "0.1.0"
+description = "Amortized Factor Inference Networks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "torch>=2.5",
+    "numpyro>=0.16",
+    "jax[cuda12]>=0.4.30",
+    "jaxlib>=0.4.30",
+    "pyro-ppl>=1.9",
+    "wandb>=0.18",
+    "scipy>=1.13",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "tqdm>=4.66",
+    "matplotlib>=3.8",
+    "jupyter>=1.0",
+    "ipykernel>=6.29",
+    "huggingface-hub>=1.14.0",
+]
+
+[project.scripts]
+afin-train = "afin.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
