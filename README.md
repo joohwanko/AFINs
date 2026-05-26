@@ -3,9 +3,15 @@
 Official repository for **Amortized Factor Inference Networks (AFINs)**.
 Paper: [arXiv coming soon](https://arxiv.org/).
 
-AFINs turn typed Bayesian factor models into approximate posteriors with one
-neural-network forward pass. A trained AFIN can be used directly for one-shot
-inference, or as a strong proposal for corrected samplers.
+AFINs are amortized posterior inference networks for Bayesian models written as
+a prior plus observed likelihood terms. Given a model and data, an AFIN returns
+an approximate posterior in a single neural-network forward pass.
+
+A single trained AFIN can be applied across different priors, likelihoods,
+numbers of observations, and latent dimensions without per-task optimization or
+retraining. The returned posterior can be used directly for one-shot inference,
+or as a proposal for corrected samplers such as SNIS or independence
+Metropolis-Hastings.
 
 ## Overview
 
