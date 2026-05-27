@@ -1,7 +1,7 @@
 # Amortized Factor Inference Networks (AFINs)
 
 Official repository for **Amortized Factor Inference Networks (AFINs)**.
-Paper: [arXiv coming soon](https://arxiv.org/).
+Paper: [arxiv link](https://arxiv.org/pdf/2605.26419).
 
 AFINs are amortized posterior inference networks for Bayesian models written as
 a prior plus observed likelihood terms. Given a model and data, an AFIN returns
